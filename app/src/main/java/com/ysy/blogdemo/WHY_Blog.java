@@ -12,6 +12,10 @@ import android.widget.TextView;
 import com.why.LuckyPan_Activity;
 import com.why.QQListViewActivity;
 import com.why.VerticalLinearLayoutActivity;
+import com.why.drawerlayout.VDHBlogActivity;
+import com.why.flappy_bird.FlappyBirdTest_Activity;
+import com.why.okhttp.Test_Activity;
+import com.why.recylerview.RecyleView_Activity;
 import com.why.viewpagerindicator.ViewPagerIndicator_Activity;
 
 import java.util.ArrayList;
@@ -40,6 +44,10 @@ public class WHY_Blog extends Activity implements AdapterView.OnItemClickListene
         list_show.add(2, "VerticalLinearLayout");
         list_show.add(3, "LuckyPan");
         list_show.add(4, "ViewPagerIndicator");
+        list_show.add(5, "ViewDragHelper");
+        list_show.add(6, "RecylerView");
+        list_show.add(7, "okhttp");
+        list_show.add(8, "flappy bird");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -69,6 +77,22 @@ public class WHY_Blog extends Activity implements AdapterView.OnItemClickListene
             case 4:
                 Intent intent4 = new Intent(WHY_Blog.this, ViewPagerIndicator_Activity.class);
                 startActivity(intent4);
+                break;
+            case 5:
+                Intent intent5 = new Intent(WHY_Blog.this, VDHBlogActivity.class);
+                startActivity(intent5);
+                break;
+            case 6:
+                Intent intent6 = new Intent(WHY_Blog.this, RecyleView_Activity.class);
+                startActivity(intent6);
+                break;
+            case 7:
+                Intent intent7 = new Intent(WHY_Blog.this, Test_Activity.class);
+                startActivity(intent7);
+                break;
+            case 8:
+                Intent intent8 = new Intent(WHY_Blog.this, FlappyBirdTest_Activity.class);
+                startActivity(intent8);
                 break;
         }
     }

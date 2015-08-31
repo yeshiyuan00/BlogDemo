@@ -11,6 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.guolin.GuoLin_Blog;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,6 +33,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
         list_show = new ArrayList<String>();
 
         list_show.add(0, "WHY_BlogDemo");
+        list_show.add(1, "GuoLin_BlogDemo");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -66,6 +69,10 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
             case 0:
                 Intent intent0 = new Intent(MainActivity.this, WHY_Blog.class);
                 startActivity(intent0);
+                break;
+            case 1:
+                Intent intent1 = new Intent(MainActivity.this, GuoLin_Blog.class);
+                startActivity(intent1);
                 break;
         }
     }

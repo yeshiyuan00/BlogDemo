@@ -16,6 +16,7 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:listDivider">@drawable/divider_bg1</item>
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
     <!-- popwidnow 显示消失动画 -->
