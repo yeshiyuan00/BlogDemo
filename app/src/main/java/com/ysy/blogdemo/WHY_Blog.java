@@ -13,7 +13,8 @@ import com.why.LuckyPan_Activity;
 import com.why.QQListViewActivity;
 import com.why.VerticalLinearLayoutActivity;
 import com.why.drawerlayout.VDHBlogActivity;
-import com.why.flappy_bird.FlappyBirdTest_Activity;
+import com.why.flappy_bird.Menu_Activity;
+import com.why.flowlayout.FlowLayoutActivity;
 import com.why.okhttp.Test_Activity;
 import com.why.recylerview.RecyleView_Activity;
 import com.why.viewpagerindicator.ViewPagerIndicator_Activity;
@@ -48,6 +49,7 @@ public class WHY_Blog extends Activity implements AdapterView.OnItemClickListene
         list_show.add(6, "RecylerView");
         list_show.add(7, "okhttp");
         list_show.add(8, "flappy bird");
+        list_show.add(9, "FlowLayout");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -91,8 +93,12 @@ public class WHY_Blog extends Activity implements AdapterView.OnItemClickListene
                 startActivity(intent7);
                 break;
             case 8:
-                Intent intent8 = new Intent(WHY_Blog.this, FlappyBirdTest_Activity.class);
+                Intent intent8 = new Intent(WHY_Blog.this, Menu_Activity.class);
                 startActivity(intent8);
+                break;
+            case 9:
+                Intent intent9 = new Intent(WHY_Blog.this, FlowLayoutActivity.class);
+                startActivity(intent9);
                 break;
         }
     }

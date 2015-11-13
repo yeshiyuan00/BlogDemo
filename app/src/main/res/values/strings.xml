@@ -3,4 +3,8 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_grade">成绩</string>
+    <string name="do_not_have_data_for_game">你还没有进行任何游戏</string>
+    <string name="title_activity_drc_curve">DrcCurveActivity</string>
+    <string name="title_activity_flow_layout">FlowLayoutActivity</string>
 </resources>

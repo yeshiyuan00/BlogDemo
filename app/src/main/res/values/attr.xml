@@ -6,4 +6,22 @@
         <attr name="item_count" />
     </declare-styleable>
 
+    <attr name="threshold_count" format="integer" />
+    <attr name="gridlinecolor" format="color" />
+    <attr name="textcolor" format="color" />
+    <attr name="indexTextSize" format="dimension" />
+    <attr name="originCurveColor" format="color" />
+    <attr name="realCurveColor" format="color" />
+    <attr name="backgroundColor" format="color" />
+
+    <declare-styleable name="DrcCurve">
+        <attr name="threshold_count" />
+        <attr name="gridlinecolor" />
+        <attr name="textcolor" />
+        <attr name="indexTextSize" />
+        <attr name="originCurveColor" />
+        <attr name="realCurveColor" />
+        <attr name="backgroundColor" />
+    </declare-styleable>
+
 </resources>
