@@ -10,9 +10,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.guolin.photowall.PhotoWall_Activity;
+import com.guolin.viewpager.Activity_ScrollerTest;
+import com.guolin.viewpager.Activity_ScrollerTest_to;
 import com.why.LuckyPan_Activity;
-import com.why.QQListViewActivity;
-import com.why.VerticalLinearLayoutActivity;
 import com.why.drawerlayout.VDHBlogActivity;
 import com.why.recylerview.RecyleView_Activity;
 import com.why.viewpagerindicator.ViewPagerIndicator_Activity;
@@ -40,6 +40,8 @@ public class GuoLin_Blog extends Activity implements AdapterView.OnItemClickList
         list_show = new ArrayList<String>();
 
         list_show.add(0, "PhotoWall");
+        list_show.add(1, "ScrollerTest");
+        list_show.add(2, "ScrollerTest2");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -55,11 +57,11 @@ public class GuoLin_Blog extends Activity implements AdapterView.OnItemClickList
                 startActivity(intent0);
                 break;
             case 1:
-                Intent intent1 = new Intent(GuoLin_Blog.this, QQListViewActivity.class);
+                Intent intent1 = new Intent(GuoLin_Blog.this, Activity_ScrollerTest.class);
                 startActivity(intent1);
                 break;
             case 2:
-                Intent intent2 = new Intent(GuoLin_Blog.this, VerticalLinearLayoutActivity.class);
+                Intent intent2 = new Intent(GuoLin_Blog.this, Activity_ScrollerTest_to.class);
                 startActivity(intent2);
                 break;
             case 3:

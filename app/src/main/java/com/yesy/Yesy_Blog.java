@@ -1,8 +1,8 @@
 package com.yesy;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -10,12 +10,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.why.LuckyPan_Activity;
-import com.why.QQListViewActivity;
-import com.why.VerticalLinearLayoutActivity;
 import com.why.drawerlayout.VDHBlogActivity;
 import com.why.recylerview.RecyleView_Activity;
 import com.why.viewpagerindicator.ViewPagerIndicator_Activity;
+import com.yesy.circleBar.MainActivity;
 import com.yesy.drccurve.DrcCurveActivity;
+import com.yesy.test.WaveProgressView;
 import com.ysy.blogdemo.R;
 
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * Created by ysy on 2015/5/5.
  */
-public class Yesy_Blog extends Activity implements AdapterView.OnItemClickListener {
+public class Yesy_Blog extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private TextView text;
     private ListView list;
@@ -40,6 +40,8 @@ public class Yesy_Blog extends Activity implements AdapterView.OnItemClickListen
         list_show = new ArrayList<String>();
 
         list_show.add(0, "DrcCurve");
+        list_show.add(1, "WaveProgressView");
+        list_show.add(2, "AccelerationProcess");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -55,11 +57,11 @@ public class Yesy_Blog extends Activity implements AdapterView.OnItemClickListen
                 startActivity(intent0);
                 break;
             case 1:
-                Intent intent1 = new Intent(Yesy_Blog.this, QQListViewActivity.class);
+                Intent intent1 = new Intent(Yesy_Blog.this, WaveProgressView.class);
                 startActivity(intent1);
                 break;
             case 2:
-                Intent intent2 = new Intent(Yesy_Blog.this, VerticalLinearLayoutActivity.class);
+                Intent intent2 = new Intent(Yesy_Blog.this,MainActivity.class);
                 startActivity(intent2);
                 break;
             case 3:

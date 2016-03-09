@@ -19,6 +19,7 @@ public class MyFlowLayout extends ViewGroup {
         super(context);
     }
 
+
     public MyFlowLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
@@ -107,7 +108,7 @@ public class MyFlowLayout extends ViewGroup {
             int childWidth = child.getMeasuredWidth();
             int childHeight = child.getMeasuredHeight();
             // 如果已经需要换行
-            if (lineWidth + lp.leftMargin + lp.rightMargin +childWidth> width) {
+            if (lineWidth + lp.leftMargin + lp.rightMargin + childWidth > width) {
                 // 记录这一行所有的View以及最大高度
                 mLineHeight.add(lineHeight);
                 // 将当前行的childView保存，然后开启新的ArrayList保存下一行的childView

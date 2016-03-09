@@ -31,4 +31,7 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.4.0'
     compile 'com.github.PhilJay:MPAndroidChart:v2.1.3'
     compile 'com.android.support:design:22.2.1'
+
+    //WaveProgressView
+    compile 'com.github.zeng1990java:WaveProgressView:1.0.5'
 }
