@@ -34,4 +34,8 @@ dependencies {
 
     //WaveProgressView
     compile 'com.github.zeng1990java:WaveProgressView:1.0.5'
+
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+
+    compile 'com.bignerdranch.android:expandablerecyclerview:2.1.1'
 }

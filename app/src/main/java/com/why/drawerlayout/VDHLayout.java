@@ -37,7 +37,7 @@ public class VDHLayout extends LinearLayout {
                 final int leftBound = getPaddingLeft();
                 final int rightBound = getWidth() - child.getWidth() - leftBound;
                 final int newLeft = Math.min(Math.max(left, leftBound), rightBound);
-                return left;
+                return newLeft;
             }
 
             @Override

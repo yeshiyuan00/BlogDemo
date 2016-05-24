@@ -15,6 +15,7 @@ import com.why.recylerview.RecyleView_Activity;
 import com.why.viewpagerindicator.ViewPagerIndicator_Activity;
 import com.yesy.circleBar.MainActivity;
 import com.yesy.drccurve.DrcCurveActivity;
+import com.yesy.expandablerecycleview.ExpandableRecyclerViewActivity;
 import com.yesy.test.WaveProgressView;
 import com.ysy.blogdemo.R;
 
@@ -42,6 +43,7 @@ public class Yesy_Blog extends AppCompatActivity implements AdapterView.OnItemCl
         list_show.add(0, "DrcCurve");
         list_show.add(1, "WaveProgressView");
         list_show.add(2, "AccelerationProcess");
+        list_show.add(3, "Expandable RecyclerView");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -65,7 +67,7 @@ public class Yesy_Blog extends AppCompatActivity implements AdapterView.OnItemCl
                 startActivity(intent2);
                 break;
             case 3:
-                Intent intent3 = new Intent(Yesy_Blog.this, LuckyPan_Activity.class);
+                Intent intent3 = new Intent(Yesy_Blog.this, ExpandableRecyclerViewActivity.class);
                 startActivity(intent3);
                 break;
             case 4:

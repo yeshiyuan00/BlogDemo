@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ysy.blogdemo">
+          package="com.ysy.blogdemo">
 
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -13,45 +13,47 @@
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".CustomViewGroupTest" />
-        <activity android:name=".WHY_Blog" />
-        <activity android:name="com.why.QQListViewActivity" />
-        <activity android:name="com.why.VerticalLinearLayoutActivity" />
-        <activity android:name="com.why.LuckyPan_Activity" />
-        <activity android:name="com.why.viewpagerindicator.ViewPagerIndicator_Activity" />
-        <activity android:name="com.why.drawerlayout.VDHBlogActivity" />
-        <activity android:name="com.why.recylerview.RecyleView_Activity" />
-        <activity android:name="com.why.recylerview.RecylerView1_Activity" />
-        <activity android:name="com.why.recylerview.RecylerView2_Activity" />
-        <activity android:name="com.why.recylerview.RecylerView3_Activity" />
-        <activity android:name="com.why.okhttp.Test_Activity" />
-        <activity android:name="com.why.flappy_bird.FlappyBirdTest_Activity" />
-        <activity android:name="com.why.flappy_bird.Score_Activity" />
-        <activity android:name="com.why.flappy_bird.Menu_Activity" />
+        <activity android:name=".CustomViewGroupTest"/>
+        <activity android:name=".WHY_Blog"/>
+        <activity android:name="com.why.QQListViewActivity"/>
+        <activity android:name="com.why.VerticalLinearLayoutActivity"/>
+        <activity android:name="com.why.LuckyPan_Activity"/>
+        <activity android:name="com.why.viewpagerindicator.ViewPagerIndicator_Activity"/>
+        <activity android:name="com.why.drawerlayout.VDHBlogActivity"/>
+        <activity android:name="com.why.recylerview.RecyleView_Activity"/>
+        <activity android:name="com.why.recylerview.RecylerView1_Activity"/>
+        <activity android:name="com.why.recylerview.RecylerView2_Activity"/>
+        <activity android:name="com.why.recylerview.RecylerView3_Activity"/>
+        <activity android:name="com.why.okhttp.Test_Activity"/>
+        <activity android:name="com.why.flappy_bird.FlappyBirdTest_Activity"/>
+        <activity android:name="com.why.flappy_bird.Score_Activity"/>
+        <activity android:name="com.why.flappy_bird.Menu_Activity"/>
 
         <!-- GuoLin-Blog -->
-        <activity android:name="com.guolin.GuoLin_Blog" />
-        <activity android:name="com.guolin.photowall.PhotoWall_Activity" />
-        <activity android:name="com.guolin.viewpager.Activity_ScrollerTest" />
+        <activity android:name="com.guolin.GuoLin_Blog"/>
+        <activity android:name="com.guolin.photowall.PhotoWall_Activity"/>
+        <activity android:name="com.guolin.viewpager.Activity_ScrollerTest"/>
 
         <!-- Yesy-Blog -->
-        <activity android:name="com.yesy.Yesy_Blog" />
+        <activity android:name="com.yesy.Yesy_Blog"/>
         <activity
             android:name="com.yesy.drccurve.DrcCurveActivity"
             android:label="@string/title_activity_drc_curve"
-            android:theme="@style/myTheme.NoActionBar" />
+            android:theme="@style/myTheme.NoActionBar"/>
         <activity
             android:name="com.why.flowlayout.FlowLayoutActivity"
             android:label="@string/title_activity_flow_layout"
-            android:theme="@style/myTheme.NoActionBar" />
-        <activity android:name="com.yesy.test.WaveProgressView" />
-        <activity android:name="com.yesy.circleBar.MainActivity" />
-        <activity android:name="com.guolin.viewpager.Activity_ScrollerTest_to"></activity>
+            android:theme="@style/myTheme.NoActionBar"/>
+        <activity android:name="com.yesy.test.WaveProgressView"/>
+        <activity android:name="com.yesy.circleBar.MainActivity"/>
+        <activity android:name="com.guolin.viewpager.Activity_ScrollerTest_to"/>
+        <activity android:name="com.yesy.expandablerecycleview.ExpandableRecyclerViewActivity">
+        </activity>
     </application>
 
 </manifest>
