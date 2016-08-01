@@ -9,11 +9,10 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.why.LuckyPan_Activity;
-import com.why.drawerlayout.VDHBlogActivity;
-import com.why.recylerview.RecyleView_Activity;
-import com.why.viewpagerindicator.ViewPagerIndicator_Activity;
+import com.yesy.aidl.MyActivity;
 import com.yesy.circleBar.MainActivity;
+import com.yesy.coordinatorlayout.CoordinatorSampleList;
+import com.yesy.cropPhoto.CropPhotoActivity;
 import com.yesy.drccurve.DrcCurveActivity;
 import com.yesy.expandablerecycleview.ExpandableRecyclerViewActivity;
 import com.yesy.test.WaveProgressView;
@@ -44,6 +43,9 @@ public class Yesy_Blog extends AppCompatActivity implements AdapterView.OnItemCl
         list_show.add(1, "WaveProgressView");
         list_show.add(2, "AccelerationProcess");
         list_show.add(3, "Expandable RecyclerView");
+        list_show.add(4, "Crop Photo");
+        list_show.add(5, "CoordinatorLayout");
+        list_show.add(6, "AIDL");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -71,15 +73,15 @@ public class Yesy_Blog extends AppCompatActivity implements AdapterView.OnItemCl
                 startActivity(intent3);
                 break;
             case 4:
-                Intent intent4 = new Intent(Yesy_Blog.this, ViewPagerIndicator_Activity.class);
+                Intent intent4 = new Intent(Yesy_Blog.this,CropPhotoActivity.class);
                 startActivity(intent4);
                 break;
             case 5:
-                Intent intent5 = new Intent(Yesy_Blog.this, VDHBlogActivity.class);
+                Intent intent5 = new Intent(Yesy_Blog.this, CoordinatorSampleList.class);
                 startActivity(intent5);
                 break;
             case 6:
-                Intent intent6 = new Intent(Yesy_Blog.this, RecyleView_Activity.class);
+                Intent intent6 = new Intent(Yesy_Blog.this, MyActivity.class);
                 startActivity(intent6);
                 break;
         }

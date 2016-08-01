@@ -23,9 +23,9 @@
 
     <style name="popwindow_delete_btn_anim_style">
         <item name="android:windowEnterAnimation">@anim/delete_btn_show</item>
- <!-- 指定显示的动画xml -->
+        <!-- 指定显示的动画xml -->
         <item name="android:windowExitAnimation">@anim/delete_btn_hide</item>
- <!-- 指定消失的动画xml -->
+        <!-- 指定消失的动画xml -->
 
     </style>
 
@@ -39,12 +39,15 @@
         <item name="android:gravity">center_vertical|center_horizontal</item>
         <item name="android:textColor">@android:color/primary_text_light</item>
     </style>
+
     <style name="myTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="myTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="myTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="myTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="myTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
 
     <style name="text_flag_01">

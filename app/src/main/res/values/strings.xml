@@ -7,4 +7,6 @@
     <string name="do_not_have_data_for_game">你还没有进行任何游戏</string>
     <string name="title_activity_drc_curve">DrcCurveActivity</string>
     <string name="title_activity_flow_layout">FlowLayoutActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_coordinator">CoordinatorActivity</string>
 </resources>
