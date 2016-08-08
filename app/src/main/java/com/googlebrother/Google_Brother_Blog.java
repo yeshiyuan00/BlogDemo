@@ -9,11 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.googlebrother.collapseview.CollapseActivity;
 import com.yesy.aidl.MyActivity;
 import com.yesy.circleBar.MainActivity;
 import com.yesy.coordinatorlayout.CoordinatorSampleList;
 import com.yesy.cropPhoto.CropPhotoActivity;
-import com.yesy.drccurve.DrcCurveActivity;
 import com.yesy.expandablerecycleview.ExpandableRecyclerViewActivity;
 import com.yesy.test.WaveProgressView;
 import com.ysy.blogdemo.R;
@@ -52,7 +52,7 @@ public class Google_Brother_Blog extends AppCompatActivity implements AdapterVie
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         switch (position) {
             case 0:
-                Intent intent0 = new Intent(Google_Brother_Blog.this, DrcCurveActivity.class);
+                Intent intent0 = new Intent(Google_Brother_Blog.this, CollapseActivity.class);
                 startActivity(intent0);
                 break;
             case 1:

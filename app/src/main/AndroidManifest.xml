@@ -45,6 +45,11 @@
         <activity android:name="com.guolin.photowall.PhotoWall_Activity"/>
         <activity android:name="com.guolin.viewpager.Activity_ScrollerTest"/>
 
+
+        <!--GoogleBrother-->
+        <activity android:name="com.googlebrother.Google_Brother_Blog"/>
+        <activity android:name="com.googlebrother.collapseview.CollapseActivity"/>
+
         <!-- Yesy-Blog -->
         <activity android:name="com.yesy.Yesy_Blog"/>
         <activity
