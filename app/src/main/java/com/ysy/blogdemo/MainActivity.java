@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.googlebrother.Google_Brother_Blog;
 import com.guolin.GuoLin_Blog;
 import com.yesy.Yesy_Blog;
 
@@ -35,7 +36,8 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
 
         list_show.add(0, "WHY_BlogDemo");
         list_show.add(1, "GuoLin_BlogDemo");
-        list_show.add(2, "Yesy_BlogDemo");
+        list_show.add(2, "GoogleBrother");
+        list_show.add(3, "Yesy_BlogDemo");
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,
                 list_show);
@@ -77,8 +79,12 @@ public class MainActivity extends Activity implements AdapterView.OnItemClickLis
                 startActivity(intent1);
                 break;
             case 2:
-                Intent intent2 = new Intent(MainActivity.this, Yesy_Blog.class);
+                Intent intent2 = new Intent(MainActivity.this, Google_Brother_Blog.class);
                 startActivity(intent2);
+                break;
+            case 3:
+                Intent intent3 = new Intent(MainActivity.this, Yesy_Blog.class);
+                startActivity(intent3);
                 break;
         }
     }
